@@ -38,7 +38,7 @@ const Home: React.FC<{ projects: Project[] }> = ({ projects }) => {
     <div className="min-h-screen bg-neumo p-4 flex flex-col">
       <Head>
         <title>Yoshiyuki Ootani</title>
-        <meta name="description" content="Yoshiyuki Ootaniのポートフォリオサイト" />
+        <meta name="description" content="ToktoTeleport" />
       </Head>
 
 
@@ -57,13 +57,13 @@ const Home: React.FC<{ projects: Project[] }> = ({ projects }) => {
         <NeumoCard className="mb-10">
           <h1 className="text-2xl font-bold mb-6">
             <RandomFontText>
-              大谷芳之 / Yoshiyuki Ootani
+              TokyoTeleport
             </RandomFontText>
           </h1>
 
           <div className="mb-6 text-shadow font-dot">
             <RandomFontText>
-              メディアアート系のプログラミングができます。
+            TokyoTeleport
             </RandomFontText>
 
           </div>
@@ -74,8 +74,8 @@ const Home: React.FC<{ projects: Project[] }> = ({ projects }) => {
         <div className="grid grid-cols-1 gap-x-10 gap-y-10">
           <div id="about"></div>
           <About  />
-          <div id="projects"></div>
-          <Projects projects={projects} />
+          {/*<div id="projects"></div>
+          <Projects projects={projects} />*/}
           <div id="contact"></div>
           <Contact />
 
