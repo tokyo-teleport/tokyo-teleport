@@ -4,12 +4,14 @@ import * as VFX from 'react-vfx';
 const VFXLogo: React.FC = () => {
   return (
     <VFX.VFXProvider>
-      <VFX.VFXImg 
-        src="/logo.png" 
-        alt="Logo" 
-        shader="rgbShift" 
-        className="w-128 h-auto mx-auto my-8 bg-transparent" 
-      />
+      <div className="flex justify-center">
+        <VFX.VFXImg 
+          src="/logo.png" 
+          alt="Logo" 
+          shader="rgbShift" 
+          className="max-w-md w-full h-auto bg-transparent" 
+        />
+      </div>
     </VFX.VFXProvider>
   );
 };
