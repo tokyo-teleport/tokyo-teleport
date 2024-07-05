@@ -1,20 +1,15 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+module.exports = {
+  purge: ['./pages/**/*.tsx', './components/**/*.tsx'],
+  darkMode: false, // ダークモードは無効
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      width: {
+        '128': '32rem', // 任意のカスタム幅（必要に応じて調整）
       },
     },
   },
+  variants: {
+    extend: {},
+  },
   plugins: [],
-};
-export default config;
+}
