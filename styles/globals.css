@@ -6,3 +6,9 @@ body {
   background-color: #000000; /* 常に黒い背景 */
   color: #ffffff; /* 文字色を白に設定（必要に応じて） */
 }
+
+footer {
+  border-top: 1px solid #333;
+  background-color: #000;
+  color: #666;
+}
