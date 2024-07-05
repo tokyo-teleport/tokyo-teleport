@@ -10,6 +10,7 @@ const VFXLogo: React.FC = () => {
           alt="Logo" 
           shader="rgbShift" 
           className="w-full h-auto bg-transparent" 
+          shaderParams={{ amount: 0.02 }} // 少し弱めのrgbShiftエフェクト
         />
       </div>
     </VFX.VFXProvider>
