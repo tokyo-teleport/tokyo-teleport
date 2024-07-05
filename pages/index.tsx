@@ -10,7 +10,7 @@ const Home: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="flex flex-col items-center justify-center w-full h-full">
         <VFXLogo />
       </main>
     </div>
